@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Conversations Captured</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+ tailwind.config = {
+ darkMode: "class",
+ theme: {
+ extend: {
+ colors: {
+ "on-secondary-container": "#636262",
+ "on-primary-fixed-variant": "#59422c",
+ "secondary-fixed-dim": "#c8c6c5",
+ "secondary-fixed": "#e5e2e1",
+ "tertiary-container": "#4b3719",
+ "inverse-surface": "#31302d",
+ "surface-container": "#f0ede8",
+ "secondary-container": "#e2dfde",
+ "primary-fixed-dim": "#e1c1a4",
+ "on-primary-container": "#bd9f83",
+ "on-tertiary": "#ffffff",
+ "on-secondary-fixed-variant": "#474746",
+ "on-secondary-fixed": "#1c1b1b",
+ "surface-dim": "#dcdad5",
+ "on-tertiary-fixed-variant": "#584324",
+ "inverse-on-surface": "#f3f0eb",
+ "surface-container-lowest": "#ffffff",
+ "outline-variant": "#d2c4ba",
+ "primary-fixed": "#fedcbe",
+ "on-tertiary-container": "#bda079",
+ "surface-bright": "#fcf9f4",
+ "on-primary-fixed": "#291806",
+ "tertiary-fixed": "#feddb3",
+ "secondary": "#5f5e5e",
+ "surface-variant": "#e5e2dd",
+ "on-secondary": "#ffffff",
+ "on-surface": "#1c1c19",
+ "on-tertiary-fixed": "#281801",
+ "outline": "#80756c",
+ "primary": "#33210d",
+ "surface-container-highest": "#e5e2dd",
+ "tertiary-fixed-dim": "#e1c299",
+ "surface-container-high": "#ebe8e3",
+ "on-surface-variant": "#4e453d",
+ "tertiary": "#332206",
+ "surface": "#fcf9f4",
+ "primary-container": "#4b3621",
+ "surface-container-low": "#f6f3ee",
+ "on-background": "#1c1c19",
+ "error": "#ba1a1a",
+ "inverse-primary": "#e1c1a4",
+ "surface-tint": "#725a42",
+ "error-container": "#ffdad6",
+ "on-error-container": "#93000a",
+ "on-primary": "#ffffff",
+ "background": "#fcf9f4",
+ "on-error": "#ffffff"
+ },
+ fontFamily: {
+ "headline": ["Newsreader", "serif"],
+ "body": ["Manrope", "sans-serif"],
+ "label": ["Manrope", "sans-serif"]
+ },
+ borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+ },
+ },
+ }
+ </script>
+<style>
+ .material-symbols-outlined {
+ font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+ vertical-align: middle;
+ }
+ body {
+ background-color: #fcf9f4;
+ color: #33210d;
+ }
+ .cinematic-gradient {
+ background: linear-gradient(45deg, #33210d 0%, #4b3621 100%);
+ }
+ </style>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(51,33,13,0.04)] transition-colors duration-300">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a href="index.html" class="font-['Newsreader'] text-2xl font-semibold tracking-tight text-[#33210d]">
+ Conversations Captured
+</a>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html">Home</a>
+<a class="font-['Newsreader'] italic text-lg text-[#33210d] border-b-2 border-[#33210d] pb-1" href="about.html">About</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html#gallery">Gallery</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html#pricing">Pricing</a>
+</div>
+<button class="cinematic-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300">
+ Request a Call
+ </button>
+</div>
+</nav>
+
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-xl mx-auto text-center">
+<h1 class="font-headline text-7xl md:text-8xl leading-[1.1] mb-8 text-primary">
+ Real people. Real connection. <span class="italic">Preserved.</span>
+ </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed">
+ Legacy Sessions exists to capture what photos can't — how someone speaks, laughs, reacts, and connects with the people they love.
+ </p>
+<button class="cinematic-gradient text-on-primary px-10 py-5 rounded-md font-label text-sm uppercase tracking-widest shadow-xl hover:opacity-90 transition-opacity">
+ Request a Call
+ </button>
+</div>
+</section>
+
+<!-- Why We Do This -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-lg mx-auto px-12">
+<h2 class="font-headline text-6xl text-primary mb-12 text-center">Why We Do This</h2>
+<div class="space-y-8 text-center max-w-3xl mx-auto">
+<p class="font-body text-xl text-on-surface-variant leading-relaxed">
+Over time, memories fade in very specific ways.
+</p>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed">
+You remember what someone looked like, but not quite how they sounded or interacted.
+</p>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed">
+A Legacy Session helps families keep the parts that matter most — the personality, humor, and presence of someone they care about.
+</p>
+</div>
+
+<div class="mt-20 grid md:grid-cols-3 gap-12 max-w-4xl mx-auto">
+<div class="text-center">
+<div class="w-16 h-16 cinematic-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-2xl">verified</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Authentic over performative</h3>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 cinematic-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-2xl">favorite</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Comfortable over polished</h3>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 cinematic-gradient rounded-full mx-auto mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-2xl">star</span>
+</div>
+<h3 class="font-headline text-2xl mb-4">Meaningful over impressive</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Who We Are -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-xl mx-auto px-12">
+<h2 class="font-headline text-6xl text-primary mb-20 text-center">Who We Are</h2>
+<div class="grid md:grid-cols-3 gap-16">
+<!-- Founder 1 -->
+<div class="text-center">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img alt="Founder" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+<h3 class="font-headline text-3xl mb-4">[Founder Name]</h3>
+<p class="text-on-surface-variant leading-relaxed">
+We created Legacy Sessions to preserve ordinary conversations that later become priceless.
+</p>
+</div>
+<!-- Founder 2 -->
+<div class="text-center">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img alt="Founder" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+<h3 class="font-headline text-3xl mb-4">[Founder Name]</h3>
+<p class="text-on-surface-variant leading-relaxed">
+Our role is simply to make people comfortable and let the conversation unfold naturally.
+</p>
+</div>
+<!-- Founder 3 -->
+<div class="text-center">
+<div class="aspect-[3/4] rounded-xl overflow-hidden mb-6 bg-surface-container">
+<img alt="Founder" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+<h3 class="font-headline text-3xl mb-4">[Founder Name]</h3>
+<p class="text-on-surface-variant leading-relaxed">
+Every session reminds us why this work matters — capturing moments before they're gone.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- What a Session Feels Like -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-lg mx-auto px-12">
+<h2 class="font-headline text-6xl text-primary mb-12 text-center italic">What a Session Feels Like</h2>
+<div class="space-y-8 max-w-3xl mx-auto">
+<p class="font-body text-2xl text-on-surface-variant leading-relaxed text-center">
+It doesn't feel like being filmed.
+</p>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed text-center">
+It feels like sitting down and having a meaningful conversation — with gentle prompts if needed.
+</p>
+
+<div class="grid md:grid-cols-3 gap-8 mt-16">
+<div class="text-center p-6 bg-surface rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block">pause_circle</span>
+<p class="text-on-surface-variant">You can pause anytime.</p>
+</div>
+<div class="text-center p-6 bg-surface rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block">sentiment_satisfied</span>
+<p class="text-on-surface-variant">Emotional moments are welcome.</p>
+</div>
+<div class="text-center p-6 bg-surface rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl mb-4 block">check_circle</span>
+<p class="text-on-surface-variant">Nothing has to be perfect.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Gallery -->
+<section class="py-32 bg-surface" id="gallery">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-12">
+<h2 class="font-headline text-6xl text-primary mb-4">Gallery</h2>
+<p class="font-label text-sm uppercase tracking-widest text-on-surface-variant">(Examples shown with permission. Most sessions remain private.)</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+<!-- Gallery Item 1 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="Legacy session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline italic text-2xl">Stories you've heard a hundred times</p>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="Legacy session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline italic text-2xl">Advice from a parent to their children</p>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="Legacy session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline italic text-2xl">Remembering childhood together</p>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="Legacy session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline italic text-2xl">Conversations worth keeping</p>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="Legacy session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline italic text-2xl">The way they laugh</p>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="Legacy session" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<p class="text-on-primary font-headline italic text-2xl">Moments you'll return to</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-screen-lg mx-auto px-12">
+<h2 class="font-headline text-6xl text-primary mb-20 text-center">FAQ</h2>
+<div class="space-y-12">
+<!-- FAQ Item -->
+<div class="border-b border-outline-variant/20 pb-8">
+<h3 class="font-headline text-3xl mb-4">How long is a session?</h3>
+<p class="text-on-surface-variant text-lg">Up to 2 hours.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-8">
+<h3 class="font-headline text-3xl mb-4">Where does it happen?</h3>
+<p class="text-on-surface-variant text-lg">In-home anywhere in San Diego County.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-8">
+<h3 class="font-headline text-3xl mb-4">Do we need to prepare?</h3>
+<p class="text-on-surface-variant text-lg">No — we guide the conversation naturally.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-8">
+<h3 class="font-headline text-3xl mb-4">What do we receive?</h3>
+<p class="text-on-surface-variant text-lg">A lightly edited legacy film and 10–20 short shareable clips.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-8">
+<h3 class="font-headline text-3xl mb-4">How much does it cost?</h3>
+<p class="text-on-surface-variant text-lg">$1,500 per session.</p>
+</div>
+<div class="border-b border-outline-variant/20 pb-8">
+<h3 class="font-headline text-3xl mb-4">Is it awkward?</h3>
+<p class="text-on-surface-variant text-lg">Usually only for a minute or two. It quickly becomes a normal conversation.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-40 bg-surface">
+<div class="max-w-4xl mx-auto px-12 text-center">
+<h2 class="font-headline text-7xl text-primary mb-12 italic">
+Preserve this while you still can.
+</h2>
+<button class="cinematic-gradient text-on-primary px-12 py-6 rounded-md font-label text-sm uppercase tracking-widest shadow-xl hover:opacity-90 transition-opacity">
+ Request a Call
+ </button>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-[#d2c4ba]/15 bg-[#fcf9f4]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="font-['Newsreader'] text-xl italic text-[#33210d] mb-8 md:mb-0">
+ Conversations Captured.
+ </div>
+<div class="flex gap-12 font-['Manrope'] text-sm tracking-widest uppercase mb-8 md:mb-0">
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Instagram</a>
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Vimeo</a>
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="about.html">About</a>
+</div>
+<div class="font-['Manrope'] text-sm tracking-widest uppercase text-[#4e453d]">
+ © 2026 Conversations Captured
+ </div>
+</div>
+</footer>
+</body>
+</html>
