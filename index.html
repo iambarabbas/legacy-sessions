@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conversations Captured | Preserving Legacies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+ tailwind.config = {
+ darkMode: "class",
+ theme: {
+ extend: {
+ colors: {
+ "on-secondary-container": "#636262",
+ "on-primary-fixed-variant": "#59422c",
+ "secondary-fixed-dim": "#c8c6c5",
+ "secondary-fixed": "#e5e2e1",
+ "tertiary-container": "#4b3719",
+ "inverse-surface": "#31302d",
+ "surface-container": "#f0ede8",
+ "secondary-container": "#e2dfde",
+ "primary-fixed-dim": "#e1c1a4",
+ "on-primary-container": "#bd9f83",
+ "on-tertiary": "#ffffff",
+ "on-secondary-fixed-variant": "#474746",
+ "on-secondary-fixed": "#1c1b1b",
+ "surface-dim": "#dcdad5",
+ "on-tertiary-fixed-variant": "#584324",
+ "inverse-on-surface": "#f3f0eb",
+ "surface-container-lowest": "#ffffff",
+ "outline-variant": "#d2c4ba",
+ "primary-fixed": "#fedcbe",
+ "on-tertiary-container": "#bda079",
+ "surface-bright": "#fcf9f4",
+ "on-primary-fixed": "#291806",
+ "tertiary-fixed": "#feddb3",
+ "secondary": "#5f5e5e",
+ "surface-variant": "#e5e2dd",
+ "on-secondary": "#ffffff",
+ "on-surface": "#1c1c19",
+ "on-tertiary-fixed": "#281801",
+ "outline": "#80756c",
+ "primary": "#33210d",
+ "surface-container-highest": "#e5e2dd",
+ "tertiary-fixed-dim": "#e1c299",
+ "surface-container-high": "#ebe8e3",
+ "on-surface-variant": "#4e453d",
+ "tertiary": "#332206",
+ "surface": "#fcf9f4",
+ "primary-container": "#4b3621",
+ "surface-container-low": "#f6f3ee",
+ "on-background": "#1c1c19",
+ "error": "#ba1a1a",
+ "inverse-primary": "#e1c1a4",
+ "surface-tint": "#725a42",
+ "error-container": "#ffdad6",
+ "on-error-container": "#93000a",
+ "on-primary": "#ffffff",
+ "background": "#fcf9f4",
+ "on-error": "#ffffff"
+ },
+ fontFamily: {
+ "headline": ["Newsreader", "serif"],
+ "body": ["Manrope", "sans-serif"],
+ "label": ["Manrope", "sans-serif"]
+ },
+ borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+ },
+ },
+ }
+ </script>
+<style>
+ .material-symbols-outlined {
+ font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+ vertical-align: middle;
+ }
+ body {
+ background-color: #fcf9f4;
+ color: #33210d;
+ }
+ .cinematic-gradient {
+ background: linear-gradient(45deg, #33210d 0%, #4b3621 100%);
+ }
+ </style>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(51,33,13,0.04)] transition-colors duration-300">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="font-['Newsreader'] text-2xl font-semibold tracking-tight text-[#33210d]">
+ Conversations Captured
+ </div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Newsreader'] italic text-lg text-[#33210d] border-b-2 border-[#33210d] pb-1" href="#experience">The Experience</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="#gallery">Gallery</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="#process">Process</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="#pricing">Pricing</a>
+</div>
+<button class="cinematic-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 scale-95 duration-200 ease-in-out">
+ Request a Call
+ </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-12 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<h1 class="font-headline text-7xl md:text-8xl leading-[1.1] mb-8 text-primary">
+ Stories that <span class="italic">outlive</span> the moment.
+ </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+ We capture personal histories through cinematic documentary filmmaking. A legacy preserved in high-fidelity sound and timeless visuals.
+ </p>
+<div class="flex items-center gap-8">
+<button class="cinematic-gradient text-on-primary px-10 py-5 rounded-md font-label text-sm uppercase tracking-widest shadow-xl">
+ Begin Your Film
+ </button>
+<button class="text-primary font-label text-sm uppercase tracking-widest border-b border-primary/20 hover:border-primary transition-all">
+ View The Experience
+ </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl scale-105">
+<img alt="Cinematic hero" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-64 h-80 bg-surface-container-low p-4 rounded-xl shadow-lg hidden lg:block">
+<div class="w-full h-full rounded-md overflow-hidden">
+<img alt="Behind the scenes" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Value: Cinematic Stills Grid -->
+<section class="py-32 bg-surface" id="gallery">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="flex justify-between items-end mb-20">
+<h2 class="font-headline text-5xl text-primary max-w-xl">
+ Every <span class="italic">sigh</span>, every <span class="italic">laugh</span>, every <span class="italic">pause</span>.
+ </h2>
+<p class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Selected Stills from the Archive</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Bento-style grid -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-xl">
+<img alt="Legacy still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+<span class="text-on-primary font-headline italic text-2xl">"The way he looked at her..."</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-80">
+<img alt="Legacy still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-80">
+<img alt="Legacy still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-80 md:col-span-2">
+<img alt="Legacy still" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/main.jpg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works: Vertical Timeline -->
+<section class="py-32 bg-surface-container-low" id="process">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-24">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant block mb-4">The Methodology</span>
+<h2 class="font-headline text-6xl text-primary italic">A Curation of Memory</h2>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<!-- Vertical Line -->
+<div class="absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-outline-variant/30 hidden md:block"></div>
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between mb-32 group">
+<div class="md:w-[45%] text-right pr-8 mb-8 md:mb-0">
+<h3 class="font-headline text-3xl mb-4">The Consultation</h3>
+<p class="text-on-surface-variant leading-relaxed">We begin with a conversation—not an interview. We identify the core narratives and the emotional anchors of your history.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full cinematic-gradient flex items-center justify-center text-on-primary font-headline text-xl">1</div>
+<div class="md:w-[45%] pl-8 hidden md:block">
+<div class="h-40 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Consultation" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-32 group">
+<div class="md:w-[45%] text-left pl-8 mb-8 md:mb-0">
+<h3 class="font-headline text-3xl mb-4">The Session</h3>
+<p class="text-on-surface-variant leading-relaxed">A professional two-camera setup in the comfort of your home. We create an environment where the technology fades and only the story remains.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full cinematic-gradient flex items-center justify-center text-on-primary font-headline text-xl">2</div>
+<div class="md:w-[45%] pr-8 hidden md:block">
+<div class="h-40 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Recording" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-[45%] text-right pr-8 mb-8 md:mb-0">
+<h3 class="font-headline text-3xl mb-4">The Heirloom</h3>
+<p class="text-on-surface-variant leading-relaxed">Painstakingly edited into a cinematic legacy piece, delivered in a bespoke digital gallery and a physical archive kit.</p>
+</div>
+<div class="z-10 w-12 h-12 rounded-full cinematic-gradient flex items-center justify-center text-on-primary font-headline text-xl">3</div>
+<div class="md:w-[45%] pl-8 hidden md:block">
+<div class="h-40 rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+<img alt="Delivery" class="w-full h-full object-cover" src="images/main.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The "Cinematic Quote" Signature Component -->
+<section class="py-40 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto px-12 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-8">format_quote</span>
+<blockquote class="font-headline text-4xl md:text-5xl leading-tight text-primary italic mb-12">
+ "We didn't just record her voice; we captured her essence. It's the most valuable thing our family owns."
+ </blockquote>
+<cite class="font-label text-sm uppercase tracking-widest text-on-surface-variant not-italic">— THE ARLINGTON FAMILY</cite>
+</div>
+</section>
+<!-- Pricing & Sessions -->
+<section class="py-32 bg-surface" id="pricing">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-24">
+<h2 class="font-headline text-6xl text-primary">Service Tiers</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Standard Tier -->
+<div class="bg-surface-container-low p-12 rounded-xl border border-outline-variant/15 flex flex-col">
+<span class="font-label text-xs uppercase tracking-widest mb-4 opacity-60">The Portrait</span>
+<h3 class="font-headline text-4xl mb-6">The Essence</h3>
+<p class="text-on-surface-variant mb-10 h-20">A focused, 2-hour session covering the core chapters of a single life story.</p>
+<div class="text-3xl font-headline mb-10">$2,400</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary text-sm">check</span> 2-Hour In-Home Session</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary text-sm">check</span> Single Camera (4K Cinematic)</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary text-sm">check</span> 15-Minute Edited Film</li>
+</ul>
+<button class="w-full py-4 border border-primary text-primary rounded-md font-label text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Select Tier</button>
+</div>
+<!-- Recommended Tier -->
+<div class="bg-primary text-on-primary p-12 rounded-xl shadow-2xl scale-105 z-10 flex flex-col">
+<span class="font-label text-xs uppercase tracking-widest mb-4 opacity-60">Most Requested</span>
+<h3 class="font-headline text-4xl mb-6 italic">The Legacy</h3>
+<p class="text-surface-variant/80 mb-10 h-20">A comprehensive full-day session including archive photo integration and multiple interviewees.</p>
+<div class="text-3xl font-headline mb-10">$4,800</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-sm text-on-primary/90"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check</span> Full Day (6 Hours)</li>
+<li class="flex items-center gap-3 text-sm text-on-primary/90"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check</span> Two-Camera Cinematic Setup</li>
+<li class="flex items-center gap-3 text-sm text-on-primary/90"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check</span> 45-Minute Feature Film</li>
+<li class="flex items-center gap-3 text-sm text-on-primary/90"><span class="material-symbols-outlined text-primary-fixed-dim text-sm">check</span> Archive Photo Scanning</li>
+</ul>
+<button class="w-full py-4 bg-on-primary text-primary rounded-md font-label text-xs uppercase tracking-widest hover:opacity-90 transition-opacity">Request The Legacy</button>
+</div>
+<!-- Highest Tier -->
+<div class="bg-surface-container-low p-12 rounded-xl border border-outline-variant/15 flex flex-col">
+<span class="font-label text-xs uppercase tracking-widest mb-4 opacity-60">The Collection</span>
+<h3 class="font-headline text-4xl mb-6">The Anthology</h3>
+<p class="text-on-surface-variant mb-10 h-20">A multi-day production tracking a family's lineage across generations.</p>
+<div class="text-3xl font-headline mb-10">Custom</div>
+<ul class="space-y-4 mb-12 flex-grow">
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary text-sm">check</span> Bespoke Production Plan</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary text-sm">check</span> Full Family Tree Interviews</li>
+<li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-primary text-sm">check</span> Linen-Bound Archive Box</li>
+</ul>
+<button class="w-full py-4 border border-primary text-primary rounded-md font-label text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Inquire Today</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact: High-end Inquiry -->
+<section class="py-32 bg-surface-container-high">
+<div class="max-w-screen-xl mx-auto px-12 grid lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline text-6xl text-primary mb-8 italic">Let's begin the conversation.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+ Legacy films are personal. Please share a few details about whose story we are capturing, and we'll reach out to schedule a private consultation.
+ </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+<span class="font-label text-sm uppercase tracking-widest">San Diego County, California</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary text-2xl">mail</span>
+<span class="font-label text-sm uppercase tracking-widest">hello@conversationscaptured.com</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-lg">
+<form class="space-y-8">
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Your Full Name</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="Your name" type="text"/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Email Address</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="your@email.com" type="email"/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Whose story are we telling?</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="My grandmother, Sarah" type="text"/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Your Message</label>
+<textarea class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm resize-none" placeholder="Tell us a little about them..." rows="4"></textarea>
+</div>
+<button class="w-full cinematic-gradient text-on-primary py-5 rounded-md font-label text-sm uppercase tracking-widest shadow-xl hover:opacity-90 transition-all" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#d2c4ba]/15 bg-[#fcf9f4] mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="font-['Newsreader'] text-xl italic text-[#33210d] mb-8 md:mb-0">
+ Conversations Captured.
+ </div>
+<div class="flex gap-12 font-['Manrope'] text-sm tracking-widest uppercase mb-8 md:mb-0">
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Instagram</a>
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Vimeo</a>
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Contact</a>
+</div>
+<div class="font-['Manrope'] text-sm tracking-widest uppercase text-[#4e453d]">
+ © 2026 Conversations Captured
+ </div>
+</div>
+</footer>
+</body>
+</html>
