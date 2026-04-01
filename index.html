@@ -278,26 +278,26 @@
 </div>
 </div>
 <div class="bg-surface-container-lowest p-10 rounded-xl shadow-lg">
-<form class="space-y-8">
+<form action="https://formspree.io/f/mzdkvkpp" method="POST" class="space-y-8">
 <div>
 <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Your Name *</label>
-<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="Your name" type="text" required/>
+<input name="name" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="Your name" type="text" required/>
 </div>
 <div>
 <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Email *</label>
-<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="your@email.com" type="email" required/>
+<input name="email" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="your@email.com" type="email" required/>
 </div>
 <div>
 <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Phone Number</label>
-<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="(555) 123-4567" type="tel"/>
+<input name="phone" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="(555) 123-4567" type="tel"/>
 </div>
 <div>
 <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Who would you like to capture?</label>
-<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="e.g., My dad, My grandmother" type="text"/>
+<input name="person" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="e.g., My dad, My grandmother" type="text"/>
 </div>
 <div>
 <label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Tell us a little about your situation</label>
-<textarea class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm resize-none" placeholder="Optional - anything that would help us understand what you're looking for" rows="4"></textarea>
+<textarea name="message" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm resize-none" placeholder="Optional - anything that would help us understand what you're looking for" rows="4"></textarea>
 </div>
 <button class="w-full cinematic-gradient text-on-primary py-5 rounded-md font-label text-sm uppercase tracking-widest shadow-xl hover:opacity-90 transition-all" type="submit">Send Request</button>
 </form>
