@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Request a Call | Conversations Captured</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+ tailwind.config = {
+ darkMode: "class",
+ theme: {
+ extend: {
+ colors: {
+ "on-secondary-container": "#636262",
+ "on-primary-fixed-variant": "#59422c",
+ "secondary-fixed-dim": "#c8c6c5",
+ "secondary-fixed": "#e5e2e1",
+ "tertiary-container": "#4b3719",
+ "inverse-surface": "#31302d",
+ "surface-container": "#f0ede8",
+ "secondary-container": "#e2dfde",
+ "primary-fixed-dim": "#e1c1a4",
+ "on-primary-container": "#bd9f83",
+ "on-tertiary": "#ffffff",
+ "on-secondary-fixed-variant": "#474746",
+ "on-secondary-fixed": "#1c1b1b",
+ "surface-dim": "#dcdad5",
+ "on-tertiary-fixed-variant": "#584324",
+ "inverse-on-surface": "#f3f0eb",
+ "surface-container-lowest": "#ffffff",
+ "outline-variant": "#d2c4ba",
+ "primary-fixed": "#fedcbe",
+ "on-tertiary-container": "#bda079",
+ "surface-bright": "#fcf9f4",
+ "on-primary-fixed": "#291806",
+ "tertiary-fixed": "#feddb3",
+ "secondary": "#5f5e5e",
+ "surface-variant": "#e5e2dd",
+ "on-secondary": "#ffffff",
+ "on-surface": "#1c1c19",
+ "on-tertiary-fixed": "#281801",
+ "outline": "#80756c",
+ "primary": "#33210d",
+ "surface-container-highest": "#e5e2dd",
+ "tertiary-fixed-dim": "#e1c299",
+ "surface-container-high": "#ebe8e3",
+ "on-surface-variant": "#4e453d",
+ "tertiary": "#332206",
+ "surface": "#fcf9f4",
+ "primary-container": "#4b3621",
+ "surface-container-low": "#f6f3ee",
+ "on-background": "#1c1c19",
+ "error": "#ba1a1a",
+ "inverse-primary": "#e1c1a4",
+ "surface-tint": "#725a42",
+ "error-container": "#ffdad6",
+ "on-error-container": "#93000a",
+ "on-primary": "#ffffff",
+ "background": "#fcf9f4",
+ "on-error": "#ffffff"
+ },
+ fontFamily: {
+ "headline": ["Newsreader", "serif"],
+ "body": ["Manrope", "sans-serif"],
+ "label": ["Manrope", "sans-serif"]
+ },
+ borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+ },
+ },
+ }
+ </script>
+<style>
+ .material-symbols-outlined {
+ font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+ vertical-align: middle;
+ }
+ body {
+ background-color: #fcf9f4;
+ color: #33210d;
+ }
+ .cinematic-gradient {
+ background: linear-gradient(45deg, #33210d 0%, #4b3621 100%);
+ }
+ </style>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-primary">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f4]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(51,33,13,0.04)] transition-colors duration-300">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a href="index.html" class="font-['Newsreader'] text-2xl font-semibold tracking-tight text-[#33210d]">
+ Conversations Captured
+ </a>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html">Home</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="about.html">About</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html#gallery">Gallery</a>
+<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html#pricing">Pricing</a>
+</div>
+<a href="contact.html" class="cinematic-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 scale-95 duration-200 ease-in-out inline-block">
+ Request a Call
+ </a>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Contact: High-end Inquiry -->
+<section class="py-32 bg-surface-container-high">
+<div class="max-w-screen-xl mx-auto px-12 grid lg:grid-cols-2 gap-24 items-center">
+<div>
+<h1 class="font-headline text-6xl text-primary mb-8 italic">Request a call to plan a Legacy Session</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+ Tell us a little about who you'd like to capture and we'll reach out to schedule a conversation.
+ </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+<span class="font-label text-sm uppercase tracking-widest">San Diego County, California</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-primary text-2xl">mail</span>
+<span class="font-label text-sm uppercase tracking-widest">hello@conversationscaptured.com</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-lg">
+<form class="space-y-8">
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Your Name *</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="Your name" type="text" required/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Email *</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="your@email.com" type="email" required/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Phone Number</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="(555) 123-4567" type="tel"/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Who would you like to capture?</label>
+<input class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="e.g., My dad, My grandmother" type="text"/>
+</div>
+<div>
+<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Tell us a little about your situation</label>
+<textarea class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm resize-none" placeholder="Optional - anything that would help us understand what you're looking for" rows="4"></textarea>
+</div>
+<button class="w-full cinematic-gradient text-on-primary py-5 rounded-md font-label text-sm uppercase tracking-widest shadow-xl hover:opacity-90 transition-all" type="submit">Send Request</button>
+</form>
+<p class="text-on-surface-variant text-sm mt-6 leading-relaxed">We'll follow up soon to schedule a call or continue over email — whichever you prefer.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#d2c4ba]/15 bg-[#fcf9f4] mt-24">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="font-['Newsreader'] text-xl italic text-[#33210d] mb-8 md:mb-0">
+ Conversations Captured.
+ </div>
+<div class="flex gap-12 font-['Manrope'] text-sm tracking-widest uppercase mb-8 md:mb-0">
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Instagram</a>
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Vimeo</a>
+<a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="contact.html">Contact</a>
+</div>
+<div class="font-['Manrope'] text-sm tracking-widest uppercase text-[#4e453d]">
+ © 2026 Conversations Captured
+ </div>
+</div>
+</footer>
+</body>
+</html>
