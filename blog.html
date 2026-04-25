@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Request a Call | Conversations Captured</title>
+<title>Stories from the Archive | Conversations Captured</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -70,7 +70,7 @@
  },
  },
  }
- </script>
+</script>
 <style>
  .material-symbols-outlined {
  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -83,7 +83,6 @@
  .cinematic-gradient {
  background: linear-gradient(45deg, #33210d 0%, #4b3621 100%);
  }
- /* Mobile typography adjustments */
  @media (max-width: 768px) {
  nav .font-\['Newsreader'\] {
  font-size: 1.1rem !important;
@@ -112,9 +111,6 @@
  h3.font-headline {
  font-size: 1.5rem !important;
  }
- .text-3xl {
- font-size: 1.75rem !important;
- }
  .text-xl {
  font-size: 1rem !important;
  }
@@ -126,14 +122,13 @@
  padding-right: 1.5rem !important;
  }
  }
- /* Mobile menu styles */
  .mobile-menu {
  display: none;
  }
  .mobile-menu.active {
  display: block;
  }
- </style>
+</style>
 </head>
 <body class="font-body selection:bg-primary-fixed-dim selection:text-primary">
 <!-- TopAppBar -->
@@ -141,17 +136,17 @@
 <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
 <a href="index.html" class="font-['Newsreader'] text-2xl font-semibold tracking-tight text-[#33210d]">
  Conversations Captured
- </a>
+</a>
 <div class="hidden md:flex items-center gap-12">
 <a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html">Home</a>
 <a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="about.html">About</a>
 <a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html#gallery">Gallery</a>
 <a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="index.html#pricing">Pricing</a>
-<a class="font-['Newsreader'] italic text-lg text-[#4e453d] hover:text-[#33210d] transition-colors" href="blog.html">Blog</a>
+<a class="font-['Newsreader'] italic text-lg text-[#33210d] border-b-2 border-[#33210d] pb-1" href="blog.html">Blog</a>
 </div>
-<a href="contact.html" class="hidden md:inline-block cinematic-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 scale-95 duration-200 ease-in-out">
+<a href="contact.html" class="hidden md:inline-block cinematic-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300">
  Request a Call
- </a>
+</a>
 <!-- Mobile menu button -->
 <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -166,7 +161,7 @@
 <a class="block font-['Newsreader'] italic text-lg text-[#4e453d] py-2" href="about.html">About</a>
 <a class="block font-['Newsreader'] italic text-lg text-[#4e453d] py-2" href="index.html#gallery">Gallery</a>
 <a class="block font-['Newsreader'] italic text-lg text-[#4e453d] py-2" href="index.html#pricing">Pricing</a>
-<a class="block font-['Newsreader'] italic text-lg text-[#4e453d] py-2" href="blog.html">Blog</a>
+<a class="block font-['Newsreader'] italic text-lg text-[#33210d] py-2" href="blog.html">Blog</a>
 <a href="contact.html" class="block cinematic-gradient text-on-primary px-8 py-3 rounded-md font-label text-sm uppercase tracking-widest text-center mt-4">
 Request a Call
 </a>
@@ -179,7 +174,6 @@ const mobileMenu = document.getElementById('mobile-menu');
 mobileMenuBtn.addEventListener('click', () => {
 mobileMenu.classList.toggle('active');
 });
-// Close mobile menu when clicking any link
 const mobileMenuLinks = mobileMenu.querySelectorAll('a');
 mobileMenuLinks.forEach(link => {
 link.addEventListener('click', () => {
@@ -187,110 +181,66 @@ mobileMenu.classList.remove('active');
 });
 });
 </script>
+
 <main class="pt-20">
-<!-- Contact: High-end Inquiry -->
-<section class="py-32 bg-surface-container-high">
-<div class="max-w-screen-xl mx-auto px-12 grid lg:grid-cols-2 gap-24 items-center">
-<div>
-<h1 class="font-headline text-6xl text-primary mb-8 italic">Request a call to plan a Legacy Session</h1>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
- Tell us a little about who you'd like to capture and we'll reach out to schedule a conversation.
+<!-- Hero -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant block mb-6">Stories from the Archive</span>
+<h1 class="font-headline text-7xl md:text-8xl text-primary leading-[1.1] max-w-3xl">
+ The things we almost <span class="italic">forgot to keep</span>.
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mt-8 leading-relaxed">
+ Reflections on memory, loss, and why the most ordinary moments are often the ones we miss the most.
+</p>
+</div>
+</section>
+
+<!-- Article List -->
+<section class="py-24 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+ <!-- Article Card -->
+ <a href="blog/the-last-time-youll-hear-their-voice.html" class="group block bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
+ <div class="h-56 overflow-hidden">
+ <img src="images/gallery-1.webp" alt="A legacy conversation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+ </div>
+ <div class="p-10">
+ <span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">April 24, 2026 &nbsp;·&nbsp; 7 min read</span>
+ <h2 class="font-headline text-3xl text-primary mt-4 mb-4 leading-snug group-hover:italic transition-all duration-300">
+ The Last Time You'll Ever Hear Their Voice
+ </h2>
+ <p class="text-on-surface-variant leading-relaxed text-sm mb-6">
+ There will come a day when you would give anything — truly anything — to hear the way they said your name one more time. This is a letter about why we can't afford to wait.
  </p>
-<div class="space-y-6">
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-primary text-2xl">location_on</span>
-<span class="font-label text-sm uppercase tracking-widest">San Diego County, California</span>
-</div>
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-primary text-2xl">phone</span>
-<a href="tel:619-784-6390" class="font-label text-sm uppercase tracking-widest hover:text-primary transition-colors">(619) 784-6390</a>
-</div>
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-primary text-2xl">mail</span>
-<a href="mailto:Max@conversationscaptured.com" class="font-label text-sm uppercase tracking-widest hover:text-primary transition-colors">Max@conversationscaptured.com</a>
-</div>
-</div>
-</div>
-<div class="bg-surface-container-lowest p-10 rounded-xl shadow-lg">
-<form action="https://formspree.io/f/mzdkvkpp" method="POST" class="space-y-8">
-<div>
-<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Your Name *</label>
-<input name="name" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="Your name" type="text" required/>
-</div>
-<div>
-<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Email *</label>
-<input name="email" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="your@email.com" type="email" required/>
-</div>
-<div>
-<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Phone Number</label>
-<input name="phone" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="(555) 123-4567" type="tel"/>
-</div>
-<div>
-<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Who would you like to capture?</label>
-<input name="person" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm" placeholder="e.g., My dad, My grandmother" type="text"/>
-</div>
-<div>
-<label class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-3 block">Tell us a little about your situation</label>
-<textarea name="message" class="w-full bg-surface-container border-none focus:ring-0 border-b-2 border-transparent focus:border-primary transition-all p-4 rounded-t-sm resize-none" placeholder="Optional - anything that would help us understand what you're looking for" rows="4"></textarea>
-</div>
-<button class="w-full cinematic-gradient text-on-primary py-5 rounded-md font-label text-sm uppercase tracking-widest shadow-xl hover:opacity-90 transition-all" type="submit">Send Request</button>
-</form>
-<p class="text-on-surface-variant text-sm mt-6 leading-relaxed">We'll follow up soon to schedule a call or continue over email — whichever you prefer.</p>
+ <span class="font-label text-sm uppercase tracking-widest text-primary border-b border-primary/20 group-hover:border-primary transition-all pb-0.5">
+ Read the story
+ </span>
+ </div>
+ </a>
+
 </div>
 </div>
 </section>
 
-<!-- What Happens Next -->
-<section class="py-24 bg-surface">
-<div class="max-w-screen-xl mx-auto px-12">
-<div class="text-center mb-16">
-<h2 class="font-headline text-4xl text-primary italic mb-4">What happens next</h2>
-<p class="text-on-surface-variant text-lg">A simple, unhurried process</p>
-</div>
-<div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-<div class="text-center">
-<div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary-fixed flex items-center justify-center">
-<span class="font-headline text-2xl text-primary">1</span>
-</div>
-<h3 class="font-headline text-xl mb-3">We'll reach out</h3>
-<p class="text-on-surface-variant leading-relaxed">Within 24 hours to introduce ourselves and learn about who you'd like to capture.</p>
-</div>
-<div class="text-center">
-<div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary-fixed flex items-center justify-center">
-<span class="font-headline text-2xl text-primary">2</span>
-</div>
-<h3 class="font-headline text-xl mb-3">Schedule your session</h3>
-<p class="text-on-surface-variant leading-relaxed">We'll find a time that works for everyone and prepare together.</p>
-</div>
-<div class="text-center">
-<div class="w-16 h-16 mx-auto mb-6 rounded-full bg-primary-fixed flex items-center justify-center">
-<span class="font-headline text-2xl text-primary">3</span>
-</div>
-<h3 class="font-headline text-xl mb-3">Receive your film</h3>
-<p class="text-on-surface-variant leading-relaxed">In 2–3 weeks, you'll have a legacy piece to keep and share for generations.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- Alternative Contact -->
-<section class="py-20 bg-surface-container-low">
-<div class="max-w-screen-xl mx-auto px-12 text-center">
-<p class="font-label text-sm uppercase tracking-widest text-on-surface-variant mb-4">Prefer to talk now?</p>
-<div class="space-y-4">
-<a href="tel:619-784-6390" class="block font-headline text-3xl text-primary hover:text-primary-container transition-colors">(619) 784-6390</a>
-<a href="mailto:Max@conversationscaptured.com" class="block font-headline text-2xl text-primary hover:text-primary-container transition-colors">Max@conversationscaptured.com</a>
-</div>
-<p class="text-on-surface-variant mt-6">We typically respond within a few hours.</p>
+<!-- Pull Quote -->
+<section class="py-40 bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto px-12 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-8">format_quote</span>
+<blockquote class="font-headline text-4xl md:text-5xl leading-tight text-primary italic mb-12">
+ "One day you will realize that the sound of their laughter was the most beautiful thing you ever took for granted."
+</blockquote>
 </div>
 </section>
 </main>
+
 <!-- Footer -->
 <footer class="w-full border-t border-[#d2c4ba]/15 bg-[#fcf9f4] mt-24">
 <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
 <div class="font-['Newsreader'] text-xl italic text-[#33210d] mb-8 md:mb-0">
  Conversations Captured.
- </div>
+</div>
 <div class="flex gap-12 font-['Manrope'] text-sm tracking-widest uppercase mb-8 md:mb-0">
 <a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Instagram</a>
 <a class="text-[#4e453d] hover:tracking-[0.2em] transition-all duration-500 opacity-70 hover:opacity-100" href="#">Vimeo</a>
@@ -298,7 +248,7 @@ mobileMenu.classList.remove('active');
 </div>
 <div class="font-['Manrope'] text-sm tracking-widest uppercase text-[#4e453d]">
  © 2026 Conversations Captured
- </div>
+</div>
 </div>
 </footer>
 </body>
