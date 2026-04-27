@@ -85,8 +85,70 @@
  }
  /* Mobile typography adjustments */
  @media (max-width: 768px) {
+ html, body {
+ overflow-x: hidden;
+ }
  nav .font-\['Newsreader'\] {
  font-size: 1.1rem !important;
+ }
+ nav > div {
+ padding-left: 1rem !important;
+ padding-right: 1rem !important;
+ padding-top: 0.75rem !important;
+ padding-bottom: 0.75rem !important;
+ }
+ main {
+ padding-top: 4.5rem !important;
+ }
+ main > section:first-child {
+ padding-top: 1.5rem !important;
+ }
+ h1.font-headline {
+ font-size: 2.25rem !important;
+ line-height: 1.1;
+ }
+ h2.font-headline {
+ font-size: 1.75rem !important;
+ line-height: 1.15;
+ }
+ h3.font-headline {
+ font-size: 1.375rem !important;
+ }
+ blockquote.font-headline {
+ font-size: 1.5rem !important;
+ line-height: 1.25;
+ }
+ .text-3xl { font-size: 1.5rem !important; }
+ .text-2xl { font-size: 1.25rem !important; }
+ .text-xl { font-size: 1rem !important; }
+ .text-lg { font-size: 1rem !important; }
+ .px-12 {
+ padding-left: 1.25rem !important;
+ padding-right: 1.25rem !important;
+ }
+ .p-12, .p-10 { padding: 1.5rem !important; }
+ .py-40 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+ .py-32 { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+ .py-24 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+ .py-16 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+ .gap-24 { gap: 2.5rem !important; }
+ .gap-16 { gap: 2rem !important; }
+ .mb-24 { margin-bottom: 2.5rem !important; }
+ .mb-20 { margin-bottom: 2rem !important; }
+ .mb-12 { margin-bottom: 2rem !important; }
+ .min-h-\[921px\] { min-height: auto !important; }
+ .pl-8 { padding-left: 0 !important; }
+ .pr-8 { padding-right: 0 !important; }
+ .text-right.pr-8, .text-left.pl-8 { text-align: left !important; }
+ #gallery .flex.justify-between {
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 1rem;
+ }
+ form input, form textarea, form button {
+ max-width: 100%;
+ box-sizing: border-box;
+ }
  }
  nav {
  padding-left: 1rem !important;
